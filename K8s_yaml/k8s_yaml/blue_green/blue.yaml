@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-v2
+  namespace: blue-green
+spec:
+  replicas: 3
+  selector:
+   matchLabels:
+    app: my-app
+    version: v2
+  template:
+   metadata:
+    labels:
+     app: my-app
+     version: v2
+   spec:
+    containers:
+    - name: myapp
+      image: birwin916/birwin-node-app_2
+      ports:
+      - containerPort: 3000

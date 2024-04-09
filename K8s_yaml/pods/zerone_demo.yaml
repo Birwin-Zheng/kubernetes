@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zerone-demo-index
+  labels:
+    app: zerone-demo-index
+spec:
+  containers:
+    - name: zerone-demo-index
+      image : harbor.birwin.lab/zodemo/zodemo.index:latest
+      ports:
+        - containerPort: 8000
+  imagePullSecrets:
+    - name: regcred

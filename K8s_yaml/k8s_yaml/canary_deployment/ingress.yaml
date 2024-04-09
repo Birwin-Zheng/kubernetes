@@ -1,0 +1,13 @@
+# ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-ingress
+  namespace: canary
+spec:
+  ingressClassName: nginx
+  defaultBackend:
+    service:
+      name: myapp-v1-svc
+      port:
+        number: 8080

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zerone-demo-index
+  labels:
+    app: zerone-demo-index
+spec:
+  selector:
+    matchLabels:
+      app: zerone-demo-index
+  replicas: 1
+  template:
+    metadata:
+      name: zerone-demo-index
+      labels:
+        app: zerone-demo-index
+    spec:
+      containers:
+        - name: zerone-demo-index
+          image : harbor.birwin.lab/zodemo/zodemo.index:latest
+          ports:
+            - containerPort: 8000
+      imagePullSecrets:
+        - name: regcred
