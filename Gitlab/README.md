@@ -33,9 +33,9 @@ sudo EXTERNAL_URL="https://gitlab.example.com" apt-get install gitlab-ee
 ```
 sudo cat /etc/gitlab/initial_root_password
 ```
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 ---
 
@@ -103,10 +103,10 @@ services:
    ```
    docker compose up -d
    ```
-   ![alt text](image-2.png)
+   ![alt text](img/image-2.png)
 
    `https://gitlab.birwin.lab:8929`
-   ![alt text](image-3.png)
+   ![alt text](img/image-3.png)
    ```
    sudo cat /etc/gitlab/initial_root_password //找尋初始的密碼
    ```
@@ -114,7 +114,7 @@ services:
 5. 從 Web 介面初始化設定 GitLab
 
    更新`root`帳號密碼
-   ![alt text](image-4.png)
+   ![alt text](img/image-4.png)
    現在的介面已不相同，設定的東西是一樣的。
 
 ###  Push gitlab 相關設定
