@@ -11,3 +11,6 @@
 | Harbor | 
 | metallb |
 | docker |
+
+### Gitlab 的安裝建置
+說明 Gitlab 使用 apt 以及 docker compose 的安裝過程
