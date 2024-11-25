@@ -1,0 +1,32 @@
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;33r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[33;1H"/tmp/kubectl-edit-2353882333.yaml" 90L, 2917B[1;1H[34m# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#[m
+[36mapiVersion[m[35m:[m apps/v1
+[36mkind[m[35m:[m Deployment
+[36mmetadata[m[35m:[m
+  [36mannotations[m[35m:[m
+    [36mdeployment.kubernetes.io/revision[m[35m:[m [31m"1"[m
+    [36mmeta.helm.sh/release-name[m[35m:[m nfs-subdir-external-provisioner
+    [36mmeta.helm.sh/release-namespace[m[35m:[m default
+  [36mcreationTimestamp[m[35m:[m [31m"2024-02-27T09:43:06Z"[m
+  [36mgeneration[m[35m:[m [31m1[m
+  [36mlabels[m[35m:[m
+    [36mapp[m[35m:[m nfs-subdir-external-provisioner
+    [36mapp.kubernetes.io/managed-by[m[35m:[m Helm
+    [36mchart[m[35m:[m nfs-subdir-external-provisioner-4.0.18
+    [36mheritage[m[35m:[m Helm
+    [36mrelease[m[35m:[m nfs-subdir-external-provisioner
+  [36mname[m[35m:[m nfs-subdir-external-provisioner
+  [36mnamespace[m[35m:[m default
+  [36mresourceVersion[m[35m:[m [31m"7059328"[m
+  [36muid[m[35m:[m 89539137-9d54-4a4f-82a9-68c396db1069
+[36mspec[m[35m:[m
+  [36mprogressDeadlineSeconds[m[35m:[m [31m600[m
+  [36mreplicas[m[35m:[m [31m1[m
+  [36mrevisionHistoryLimit[m[35m:[m [31m10[m
+  [36mselector[m[35m:[m
+    [36mmatchLabels[m[35m:[m[30;7H[36mapp[m[35m:[m nfs-subdir-external-provisioner[31;7H[36mrelease[m[35m:[m nfs-subdir-external-provisioner
+  [36mstrategy[m[35m:[m[33;111H1,1[11CTop[1;1H[?25h[?25l[33;1HType  :qa  and press <Enter> to exit Vim[33;42H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;111H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;111H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;111H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;111H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;111H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;111H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;111H[K[33;111H1,1[11CTop[1;1H[?25h[?25l[33;101H~@k[1;1H[33;101H   [1;2H[33;113H2[1;2H[?25h[?25l[33;101H~@k[1;2H[33;101H   [1;1H[33;113H1[1;1H[?25h[?25l[33;101H~@k[1;1H[33;101H   [1;2H[33;113H2[1;2H[?25h[?25l[33;101H~@k[1;2H[33;101H   [1;1H[33;113H1[1;1H[?25h[?25l[33;101H~@k[1;1H[33;101H   [1;2H[33;113H2[1;2H[?25h[?25l[33;101H~@k[1;2H[33;101H   [1;1H[33;113H1[1;1H[?25h[33;1H[?2004l[>4;m[?1004l[?2004l[?1l>[>4;m[?1049l[23;0;0tVim: Error reading input, exiting...
+Vim: Finished.
+[33;1H[?25h[23;2t[23;1t[J

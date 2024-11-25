@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zerone-shop-backend
+  labels:
+    app: shop-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zerone-shop-backend
+  template:
+    metadata:
+      name: zerone-shop-backend
+      labels:
+        app: zerone-shop-backend
+    spec:
+      containers:
+        - name: zerone-shop-backend
+          image : harbor.birwin.lab/microshop-demo/shop-backend
+          #image : birwin916/microshop-backend
+          ports:
+            - containerPort: 5000
+      nodeName: kubenode01
+      imagePullSecrets:
+        - name: regcred
+
+

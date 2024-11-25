@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zerone-shop-jwt
+  labels:
+    app: shop-jwt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zerone-shop-jwt
+  template:
+    metadata: 
+      name: zerone-shop-jwt
+      labels:
+        app: zerone-shop-jwt
+    spec:
+      containers:
+        - name: zerone-shop-jwt
+          image : harbor.birwin.lab/microshop-demo/shop-jwt
+          #image : birwin916/microshop-jwt
+          ports:
+            - containerPort: 34567
+      nodeName: kubenode01
+      imagePullSecrets:
+        - name: regcred

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: zerone-shop-jwt-svc
+spec:
+  type: LoadBalancer  # 使用 LoadBalancer 類型來暴露服務，根據需要可以選擇 NodePort 或 ClusterIP
+  selector:
+    app: zerone-shop-jwt
+  ports:
+    - name: http-api
+      protocol: TCP
+      port: 34567     # 外部訪問的端口
+      targetPort: 34567 # Pod 內部的端口
